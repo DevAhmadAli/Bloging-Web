@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AHMAD, Portfolio</title>
+    <link rel="icon" type="image/png" href="assets/weblogo.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><i class='bx bx-x'></i></a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#">Resume</a></li>
+            <li class="active"><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="faqs.html">FAQS</a></li>
+            <li><a href="contact.html">Let's Work Togather</a></li>
+        </ul>
+        <ul>
+            <li class="active"><a href="portfolio.html">Portolio</a></li>
+            <li class="bar-tags"><a href="index.html">Home</a></li>
+            <li class="bar-tags" ><a href="about.html">About</a></li>
+            <li class="bar-tags"><a href="#">Resume</a></li>
+            <li class="bar-tags"><a href="faqs.html">FAQS</a></li>
+            <li class="right phone"><a href="contact.html"><i class='bx bxs-phone'></i></a></li>
+            <li class="right text"><a href="contact.html">Let's Work Togather</a></li>
+            <li onclick=showSidebar() class="bar-icon menu-btn"><a href="#"><i class='bx bx-menu'></i></a></li>
+        </ul>
+    </nav>
+
+    <section class="portfolio-section">
+        <h1>My Portfolio</h1>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <img src="assets/project1.jpg" alt="Project 1">
+                <h3>Project 1</h3>
+                <p>A responsive e-commerce website built with React and Node.js.</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="assets/project2.jpg" alt="Project 2">
+                <h3>Project 2</h3>
+                <p>A modern blog platform with a custom CMS.</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="assets/project3.jpg" alt="Project 3">
+                <h3>Project 3</h3>
+                <p>An interactive dashboard for data visualization.</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="icon" type="image/png" href="assets/weblogo.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><i class='bx bx-x'></i></a></li>
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="about.html">About</a></li>
+            <li><a href="#">Resume</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="faqs.html">FAQS</a></li>
+            <li><a href="contact.html">Let's Work Togather</a></li>
+        </ul>
+        <ul>
+            <li class="active"><a href="about.html">About</a></li>
+            <li class="bar-tags"><a href="index.html">Home</a></li>
+            <li class="bar-tags"><a href="#">Resume</a></li>
+            <li class="bar-tags"><a href="portfolio.html">Portolio</a></li>
+            <li class="bar-tags"><a href="faqs.html">FAQS</a></li>
+            <li class="right phone"><a href="contact.html"><i class='bx bxs-phone'></i></a></li>
+            <li class="right text"><a href="contact.html">Let's Work Togather</a></li>
+            <li onclick=showSidebar() class="bar-icon menu-btn"><a href="#"><i class='bx bx-menu'></i></a></li>
+        </ul>
+    </nav>
+    
+    <section class="about-section">
+        <div class="about-content">
+            <h1>About Me</h1>
+            <p>Hi, I'm Ali Ahmad, a passionate Frontend Developer with a love for creating beautiful and functional websites. I specialize in HTML, CSS, JavaScript, and modern frameworks like React. With over 5 years of experience, I've worked on various projects, from small business websites to large-scale web applications.</p>
+            <div class="skills">
+                <h2>Skills</h2>
+                <ul>
+                    <li>HTML5 & CSS3</li>
+                    <li>JavaScript (ES6+)</li>
+                    <li>React.js</li>
+                    <li>Responsive Design</li>
+                    <li>UI/UX Design</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ali, Contact Me</title>
+    <link rel="icon" type="image/png" href="assets/weblogo.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body class="contact-bg">
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><i class='bx bx-x'></i></a></li>
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="about.html">About</a></li>
+            <li><a href="#">Resume</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="faqs.html">FAQS</a></li>
+            <li><a href="contact.html">Let's Work Togather</a></li>
+        </ul>
+        <ul>
+            <li class="active"><a href="#">Contact</a></li>
+            <li class="bar-tags"><a href="index.html">Home</a></li>
+            <li class="bar-tags" ><a href="about.html">About</a></li>
+            <li class="bar-tags"><a href="#">Resume</a></li>
+            <li class="bar-tags"><a href="portfolio.html">Portolio</a></li>
+            <li class="bar-tags"><a href="faqs.html">FAQS</a></li>
+            <li class="right phone"><a href="contact.html"><i class='bx bxs-phone'></i></a></li>
+            <li class="right text"><a href="contact.html">Let's Work Togather</a></li>
+            <li onclick=showSidebar() class="bar-icon menu-btn"><a href="#"><i class='bx bx-menu'></i></a></li>
+        </ul>
+    </nav>
+
+    <section class="contact-section">
+        <div class="contact-container">
+            <form id="contact-form" action="#" method="POST">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" required>
+                    <label for="name">Your Name</label>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" required>
+                    <label for="email">Email</label>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                    <label for="message">Message</label>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+        <div class="contact-info">
+            <h1>Get in Touch</h1>
+            <p>Have a question or want to work together? Feel free to reach out!</p>
+            <ul>
+                <li><i class='bx bx-envelope'></i> <a href="mailto:ali.ahmad@example.com">ali.ahmad@example.com</a></li>
+                <li><i class='bx bx-phone'></i> <a href="tel:+1234567890">+123 456 7890</a></li>
+                <li><i class='bx bx-map'></i> 123 Main Street, City, Country</li>
+            </ul>
+        </div>
+    </section>
+
+    <script src="script.js"></script> 
+</body>
+</html>
+

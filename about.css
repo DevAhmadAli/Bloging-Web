@@ -1,0 +1,211 @@
+/* IMPORTED FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+body {
+    min-height: 100vh;
+    background-image: url('assets/homebgr.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    padding: 15px;
+    gap: 35px;
+}
+
+nav .right {
+    padding: 0px;
+    margin-left: auto;
+    background: #01a3c2;
+    border-radius: 4px;
+}
+
+nav .phone {
+    display: none;
+    
+}
+
+nav .phone a i {
+    
+    font-size: 2rem;
+}
+
+nav .right:hover, .phone a i:hover {
+    background: white;
+}
+
+nav .right a:hover, .phone a i:hover {
+    color: #01a3c2;
+    background: white;
+}
+
+nav li:last-child a {
+    font-size: 0.9rem;
+}
+
+nav li:first-child {
+    margin-left: 30px;
+}
+
+nav li a {
+    color: white;
+    padding: 4px;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.nav ul a:hover {
+    color: #01a3c2;
+}
+
+nav .active a {
+    font-weight: 900;
+    color: #01a3c2;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: #414163a1;
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li {
+    width: 100%;
+    padding: 10px 20px;
+}
+
+.sidebar a {
+    color: #fff;
+    text-decoration: none;
+}
+.bar-icon i {
+    font-size: 2rem;
+}
+
+.menu-btn {
+    display: none;
+}
+
+/* ************************************ */
+
+/* About Page Styles */
+
+.about-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.about-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #01a3c2;
+}
+
+.about-content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto 40px;
+}
+
+.skills {
+    background-color: #2a2a2a;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.skills h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #01a3c2;
+}
+
+.skills ul {
+    list-style: none;
+    text-align: left;
+}
+
+.skills ul li {
+    font-size: 1.1rem;
+    padding: 10px 0;
+    border-bottom: 1px solid #444;
+}
+
+.skills ul li:last-child {
+    border-bottom: none;
+}
+
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 992px) { 
+}
+
+@media (max-width: 895px) {
+    nav ul {
+        padding: 15px;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 725px) {
+    
+    nav ul {
+        padding: 15px;
+        gap: 12px;
+    }
+    
+    nav .phone {
+        display: flex;
+    }
+    nav .text {
+        display: none;
+    }
+    
+}
+@media (max-width: 462px) {
+    nav .active a {
+        font-size: 1.5rem;
+    }
+    .menu-btn {
+        display: flex;
+    }
+    .bar-tags  {
+        display: none;
+    }
+}
+

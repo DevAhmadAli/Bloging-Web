@@ -1,0 +1,244 @@
+/* IMPORTED FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+body {
+    min-height: 100vh;
+    background-image: url('assets/homebgr.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/* body {
+    min-height: 100vh;
+    background-image: url(assets/homebgr.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+} */
+
+/* Navigation Styles */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    padding: 15px;
+    gap: 35px;
+}
+
+nav .right {
+    padding: 0px;
+    margin-left: auto;
+    background: #01a3c2;
+    border-radius: 4px;
+}
+
+nav .phone {
+    display: none;
+    
+}
+
+nav .phone a i {
+    
+    font-size: 2rem;
+}
+
+nav .right:hover, .phone a i:hover {
+    background: white;
+}
+
+nav .right a:hover, .phone a i:hover {
+    color: #01a3c2;
+    background: white;
+}
+
+nav li:last-child a {
+    font-size: 0.9rem;
+}
+
+nav li:first-child {
+    margin-left: 30px;
+}
+
+nav li a {
+    color: white;
+    padding: 4px;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.nav ul a:hover {
+    color: #01a3c2;
+}
+
+nav .active a {
+    font-weight: 900;
+    color: #01a3c2;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: #414163a1;
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li {
+    width: 100%;
+    padding: 10px 20px;
+}
+
+.sidebar a {
+    color: #fff;
+    text-decoration: none;
+}
+.bar-icon i {
+    font-size: 2rem;
+}
+
+.menu-btn {
+    display: none;
+}
+
+/* ************************ */
+
+/* Portfolio Page Styles */
+.portfolio-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.portfolio-section h1 {
+    font-size: 3rem;
+    margin-bottom: 40px;
+    color: #01a3c2;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.portfolio-item {
+    background-color: #2a2a2a;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.portfolio-item img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.portfolio-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #01a3c2;
+}
+
+.portfolio-item p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+    .cbrc-section {
+        margin-left: -500px;
+    }
+}
+
+@media (max-width: 992px) {
+    .cbrc-section {
+        margin-left: -300px;
+    }
+
+    .section-content-box h1 {
+        font-size: 4rem;
+    }
+
+    .box-t-p {
+        font-size: 2.5rem;
+    }
+
+    .box-b-p {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 895px) {
+    nav ul {
+        padding: 15px;
+        gap: 20px;
+    }
+    .cbrc-section {
+        margin-left: -150px;
+    }
+    .section-content-btns {
+        gap: 15px;
+        margin-left: -80px;
+    }
+    .section-content-btns button {
+        width: 120px;
+        padding: 4px;
+        margin-top: 25px;
+    }
+}
+
+@media (max-width: 725px) {
+    .section-content {
+    }
+    nav ul {
+        padding: 15px;
+        gap: 12px;
+    }
+    
+    nav .phone {
+        display: flex;
+    }
+    nav .text {
+        display: none;
+    }
+    
+}
+@media (max-width: 462px) {
+    nav .active a {
+        font-size: 1.5rem;
+    }
+    .menu-btn {
+        display: flex;
+    }
+    .bar-tags  {
+        display: none;
+    }
+}
+
